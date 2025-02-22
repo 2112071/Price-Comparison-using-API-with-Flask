@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Comparison Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>💰 Price Comparison Tool</h1>
+        <p>Find the best deals across multiple platforms!</p>
+    </header>
+
+    <div class="container">
+        <h2>Compare Prices & Save Money!</h2>
+        
+        <form method="POST">
+            <input type="text" name="product" placeholder="Enter product name..." required>
+            <button type="submit">🔍 Search</button>
+        </form>
+
+    
+            <div class="results-section">
+                <h3>🔽 Price Comparison Results</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Price (INR)</th>
+                            <th>Link</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                            <tr>
+                                <td>{{ item.name }}</td>
+                                <td>₹{{ item.price }}</td>
+                                <td><a href="{{ item.link }}" target="_blank">🛒 View</a></td>
+                            </tr>
+                        
+                    </tbody>
+                </table>
+            </div>
+       
+    </div>
+
+    <footer>
+        <p>© 2025 Price Comparison Tool | Built for Final Year Project 🚀</p>
+    </footer>
+
+</body>
+</html>
