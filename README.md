@@ -1,4 +1,4 @@
-                                                              **Price Comparison using API with Flask**
+##Price Comparison using API with Flask
 
 ## Project Overview
 This project is designed to help users compare the prices of products from various e-commerce platforms by fetching real-time data through APIs. The web application is built using Flask, providing an intuitive interface for users to search for products and see price comparisons. It enables users to make more informed purchasing decisions by presenting price differences across multiple online stores.
